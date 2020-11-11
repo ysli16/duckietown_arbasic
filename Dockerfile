@@ -1,6 +1,6 @@
 # parameters
-ARG REPO_NAME="<REPO_NAME_HERE>"
-ARG DESCRIPTION="<DESCRIPTION_HERE>"
+ARG REPO_NAME="<duckietown_arbasic>"
+ARG DESCRIPTION="<Basic augmented reality exercise. It defines a node that subscribe image topic, draw some segments on the image given a yaml file and publish the image to a new topic. >"
 ARG MAINTAINER="<Yueshan Li> (<yuesli@student.ethz.ch>)"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"

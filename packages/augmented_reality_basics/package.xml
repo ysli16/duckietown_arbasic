@@ -1,8 +1,8 @@
 <package>
-  <name>my_package</name>
+  <name>augmented_reality_basics</name>
   <version>0.1.0</version>
   <description>
-  This package is a test for RH3.
+  Basic augmented reality exercise. It defines a node that subscribe image topic, draw some segments on the image given a yaml file and publish the image to a new topic. 
   </description>
   <maintainer email="yuesli@student.ethz.ch">Yueshan Li</maintainer>
   <license>None</license>

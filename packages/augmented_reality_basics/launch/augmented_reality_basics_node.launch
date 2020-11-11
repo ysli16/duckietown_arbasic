@@ -1,0 +1,12 @@
+<launch>
+  <arg name="veh"/>
+  <arg name="node_name" value="augmented_reality_basics_node" />
+  <arg name="map_file" default="hud"/>
+
+  <group ns="$(arg veh)">
+    <remap from="augmented_image" to="$(arg node_name)/$(arg map_file)/image/compressed" />
+    <node name="$(arg node_name)" pkg="augmented_reality_basics" type="augmented_reality_basics_node.py" output="screen">
+      <rosparam command="load" file="$(find augmented_reality_basics)/maps/$(arg map_file).yaml" />
+    </node>
+  </group>
+</launch>
