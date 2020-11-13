@@ -1,15 +1,22 @@
 ## Usage
-To build image, run command
+
+### Build docker image
+
+Run command
 
 `dts devel build -H <duckiebot_name>.local -f`
 
-replace `<duckiebot_name>` with the name of your duckiebot.
+Replace `<duckiebot_name>` with the name of your duckiebot.
 
-To run the container, run command
+### Run the container
+
+Run command
 
 `dts devel run -H <duckiebot_name>.local`
 
-replace `<duckiebot_name>` with the name of your duckiebot.
+Replace `<duckiebot_name>` with the name of your duckiebot.
+
+### Set desired map file
 
 The default map file of the package is *hud.yaml*. You can change the following line in the *default.sh* file in *launchers* folder.
 
