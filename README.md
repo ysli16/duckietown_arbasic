@@ -23,3 +23,17 @@ The default map file of the package is *hud.yaml*. You can change the following 
 `dt-exec roslaunch augmented_reality_basics augmented_reality_basics_node.launch map_file:=<map_name> veh:="$VEHICLE_NAME"`
 
 replace `<map_name>` with hud, calibration_pattern or lane. 
+
+### Check the result
+
+Run command 
+
+`dts start_gui_tools <duckiebot_name>`
+
+Replace `<duckiebot_name>` with the name of your duckiebot.
+
+Then run command
+
+`rqt_image_view`
+
+and select topic */<robot_name>/<node_name>/<map_name>/image/compressed*. The *<robot_name>*,*<node_name>*, and *<map_name>* are the actual name of your duckiebot, ros node and map file.
